@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background: #17171b;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1290px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}

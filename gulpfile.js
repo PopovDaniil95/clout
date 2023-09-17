@@ -14,7 +14,6 @@ const fonter = require("gulp-fonter");
 const ttf2woff2 = require("gulp-ttf2woff2");
 const svgSprite = require("gulp-svg-sprite");
 const include = require("gulp-include");
-const fancybox = require("@fancyapps/fancybox");
 
 function pages() {
   return src("app/pages/*.html")
