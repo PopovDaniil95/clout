@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Druk Cyr';
+    src: local('Druk Cyr Bold'), local('Druk-Cyr-Bold'),
+        url('DrukCyr-Bold.woff2') format('woff2'),
+        url('DrukCyr-Bold.woff') format('woff'),
+        url('DrukCyr-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

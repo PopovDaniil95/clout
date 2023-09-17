@@ -1,0 +1,23 @@
+@import url(../fonts/DrukCyr-Bold/style.css);
+@import url(../fonts/DrukCyr-Medium/style.css);
+@import url(../fonts/TTNorms-Bold/style.css);
+@import url(../fonts/TTNorms-Light/style.css);
+@import url(../fonts/TTNorms-Medium/style.css);
+@import url(../fonts/TTNorms-Regular/style.css);
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+.h1 {
+  font-family: "Druk Cyr";
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.h2 {
+  font-family: "TT Norms";
+  font-weight: 500;
+  font-size: 50px;
+}
