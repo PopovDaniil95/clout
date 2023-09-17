@@ -1,0 +1,50 @@
+.promo__background {
+  position: relative;
+}
+
+.shape-mid {
+  position: absolute;
+  width: 337px;
+  height: auto;
+  top: 134px;
+  left: 114px;
+}
+
+.shape-small {
+  position: absolute;
+  width: 222px;
+  height: auto;
+  left: 447px;
+  top: 69px;
+}
+
+.shape-big {
+  position: absolute;
+  width: 993px;
+  height: auto;
+  top: 135px;
+  right: 50px;
+}
+
+.promo__btn-video {
+  position: absolute;
+  right: -61px;
+  top: 282px;
+}
+
+.promo__btn-video-wrapper {
+  position: relative;
+  display: flex;
+  width: 241px;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo__btn-video-cover {
+  max-width: 241px;
+  height: 100%;
+}
+
+.promo__btn-video-icon {
+  position: absolute;
+}

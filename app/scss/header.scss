@@ -1,3 +1,8 @@
+header {
+  border-bottom: 1px solid #6d6d6d;
+  padding-bottom: 5px;
+}
+
 .header__wrapper {
   padding-top: 47px;
   align-items: center;
@@ -8,9 +13,8 @@
   position: relative;
   z-index: 2;
   left: 42px;
-  font-family: "Druk Wide";
+
   font-size: 29px;
-  font-weight: 500;
   line-height: 39.859px;
   letter-spacing: -1.16px;
 }
@@ -29,20 +33,27 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
+    gap: 94px;
     li {
+      font-family: "TT Norms";
+      font-weight: 300;
+      font-size: 16px;
       list-style-type: none;
       color: #6f767e;
-      a {
+    }
+    a {
+      transition: all 0.3s;
+
+      &:hover {
+        font-weight: 700;
+        transition: all 0.3s;
       }
     }
   }
 }
 
 .social-media {
-  a {
-    width: 18px;
-    height: 18px;
-  }
+  height: 100%;
+  align-items: center;
+  gap: 13px;
 }
