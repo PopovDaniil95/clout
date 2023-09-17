@@ -1,9 +1,9 @@
 .promo__background {
-  position: relative;
+  position: absolute;
 }
 
 .shape-mid {
-  position: absolute;
+  position: relative;
   width: 337px;
   height: auto;
   top: 134px;
@@ -11,25 +11,26 @@
 }
 
 .shape-small {
-  position: absolute;
+  position: relative;
   width: 222px;
   height: auto;
-  left: 447px;
-  top: 69px;
+  left: 106px;
+  top: -83px;
 }
 
 .shape-big {
-  position: absolute;
+  position: relative;
   width: 993px;
   height: auto;
-  top: 135px;
-  right: 50px;
+  bottom: 220px;
+  left: 251px;
 }
 
 .promo__btn-video {
   position: absolute;
-  right: -61px;
   top: 282px;
+
+  right: 94px;
 }
 
 .promo__btn-video-wrapper {
@@ -47,4 +48,9 @@
 
 .promo__btn-video-icon {
   position: absolute;
+}
+
+.promo__content {
+  padding-bottom: 500px;
+  padding-top: 500px;
 }
