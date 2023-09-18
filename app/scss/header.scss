@@ -1,4 +1,4 @@
-header {
+.header {
   border-bottom: 1px solid #6d6d6d;
   padding-bottom: 5px;
 }
@@ -10,50 +10,23 @@ header {
 }
 
 .header__logo-title {
+  display: block;
   position: relative;
   z-index: 2;
   left: 42px;
 
+  font-weight: 500;
   font-size: 29px;
   line-height: 39.859px;
   letter-spacing: -1.16px;
 }
 
 .header__logo-element {
+  display: block;
   position: absolute;
   top: -54px;
   width: 80px;
   height: 218px;
   background: #cd151d;
   z-index: 1;
-}
-
-.menu {
-  ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    gap: 94px;
-    li {
-      font-family: "TT Norms";
-      font-weight: 300;
-      font-size: 16px;
-      list-style-type: none;
-      color: #6f767e;
-    }
-    a {
-      transition: all 0.3s;
-
-      &:hover {
-        font-weight: 700;
-        transition: all 0.3s;
-      }
-    }
-  }
-}
-
-.social-media {
-  height: 100%;
-  align-items: center;
-  gap: 13px;
 }

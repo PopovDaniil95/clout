@@ -9,11 +9,15 @@
 body {
   z-index: 0;
   background: #17171b;
+  font-family: "TT Norms";
+  overflow-x: hidden;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1290px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1330px;
 }
 
 .flex {

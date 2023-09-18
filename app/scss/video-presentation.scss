@@ -1,0 +1,22 @@
+.promo__btn-video {
+  position: absolute;
+  top: 282px;
+  right: 94px;
+}
+
+.promo__btn-video-wrapper {
+  position: relative;
+  display: flex;
+  width: 241px;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo__btn-video-cover {
+  max-width: 241px;
+  height: 100%;
+}
+
+.promo__btn-video-icon {
+  position: absolute;
+}

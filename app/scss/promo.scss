@@ -1,3 +1,7 @@
+.promo {
+  position: relative;
+}
+
 .promo__background {
   position: absolute;
 }
@@ -26,30 +30,25 @@
   left: 251px;
 }
 
-.promo__btn-video {
-  position: absolute;
-  top: 282px;
-  right: 94px;
-}
-
-.promo__btn-video-wrapper {
-  position: relative;
-  display: flex;
-  width: 241px;
-  align-items: center;
-  justify-content: center;
-}
-
-.promo__btn-video-cover {
-  max-width: 241px;
-  height: 100%;
-}
-
-.promo__btn-video-icon {
-  position: absolute;
-}
-
 .promo__content {
+  position: relative;
   padding-bottom: 500px;
-  padding-top: 500px;
+  padding-top: 486px;
+  z-index: 2;
+}
+
+.promo__title {
+  text-align: center;
+  font-size: 151.084px;
+  font-weight: 700;
+  line-height: 138.968px;
+  margin-bottom: 28px;
+}
+
+.promo__description {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 26.444px;
+  letter-spacing: 1px;
 }
