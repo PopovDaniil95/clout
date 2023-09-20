@@ -67,7 +67,7 @@
     display: flex;
     position: absolute;
     right: 16px;
-    top: 28px;
+    top: 52px;
     z-index: 6;
   }
   .menu {
@@ -109,6 +109,10 @@
 }
 
 @media (max-width: 600px) {
+  .menu__btn-drop-down {
+    right: 10px;
+    top: 31px;
+  }
   .menu {
     ul {
       width: 100%;
