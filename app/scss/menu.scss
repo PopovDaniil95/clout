@@ -68,7 +68,7 @@
     position: absolute;
     right: 16px;
     top: 52px;
-    z-index: 6;
+    z-index: 1000;
   }
   .menu {
     ul {
@@ -78,31 +78,23 @@
       flex-direction: column;
       gap: 39px 0;
       padding: 155px 44px 98px 44px;
-      position: absolute;
-      right: 0;
+      position: fixed;
+      right: -100%;
       top: 0;
-      transform: translateX(100%);
-      transition: all 0.3s ease;
-      z-index: 5;
-
-      .social-media {
-        display: flex;
-        margin-top: 143px;
-        align-self: center;
-        gap: 20px;
-
-        a {
-          img {
-            width: 24px;
-            height: 24px;
-          }
+      z-index: 10;
+      transition: all 0.3s ease-in-out;
+      height: 100vh;
+      a {
+        img {
+          width: 24px;
+          height: 24px;
         }
       }
     }
   }
   .menu {
     ul.menu__btn-drop-down_open {
-      transform: translateX(0%);
+      right: 0;
       transition: all 0.3s ease;
     }
   }

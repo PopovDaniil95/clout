@@ -3,3 +3,32 @@
   align-items: center;
   gap: 13px;
 }
+@media (max-width: 870px) {
+  .social-media.flex {
+    display: none;
+  }
+  .social-media.social-media_drop-down {
+    display: flex;
+    position: fixed;
+    width: 141px;
+    z-index: 10;
+    left: calc(50% + 133px);
+    bottom: -226px;
+    gap: 19px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .social-media.social-media_drop-down {
+    left: calc(50% - 97px);
+    bottom: -226px;
+  }
+}
+
+.vk path:hover {
+  fill: blue;
+}

@@ -18,11 +18,13 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   max-width: 1330px;
+  overflow-x: hidden;
 }
 
 .flex {
   display: flex;
   flex-direction: row;
+  position: static;
 }
 
 a {
