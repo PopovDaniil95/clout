@@ -1,0 +1,24 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__title {
+  display: flex;
+  align-self: center;
+  padding-bottom: 50px;
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu_projects {
+  padding-bottom: 45px;
+  border-bottom: 1px solid rgba(217, 217, 217, 0.33);
+}
+
+.menu_projects {
+  a {
+    color: rgba(255, 255, 255, 0.69);
+  }
+}

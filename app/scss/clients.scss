@@ -1,0 +1,52 @@
+.clients {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 87px;
+}
+
+.clients__title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.clients__marquee-wrap {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+
+  display: inline-flex;
+  align-items: center;
+  -webkit-animation: marquee 50s linear infinite;
+  animation: marquee 50s linear infinite;
+  gap: 50px;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+    opacity: 0.5;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+    opacity: 0.5;
+  }
+}

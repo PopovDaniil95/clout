@@ -3,6 +3,11 @@
   align-items: center;
   gap: 13px;
 }
+
+.social-media path {
+  transition: all 0.3s;
+}
+
 @media (max-width: 870px) {
   .social-media.flex {
     display: none;
@@ -15,7 +20,7 @@
     left: calc(50% + 133px);
     bottom: -226px;
     gap: 19px;
-    img {
+    svg {
       width: 24px;
       height: 24px;
     }
@@ -29,6 +34,35 @@
   }
 }
 
-.vk path:hover {
-  fill: blue;
+.social-media__vk:hover {
+  path {
+    fill: rgb(56, 92, 254);
+    transition: all 0.3s;
+  }
+}
+
+.social-media__twitter:hover {
+  path {
+    fill: rgb(83, 155, 214);
+    transition: all 0.3s;
+  }
+}
+
+.social-media__youtube:hover {
+  path {
+    fill: rgb(232, 0, 7);
+    transition: all 0.3s;
+  }
+}
+.social-media__instagram:hover {
+  path {
+    fill: rgb(237, 0, 213);
+    transition: all 0.3s;
+  }
+}
+.social-media__telegram:hover {
+  path {
+    fill: rgb(59, 143, 206);
+    transition: all 0.3s;
+  }
 }

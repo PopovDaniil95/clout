@@ -39,7 +39,7 @@
 }
 
 @media (max-width: 1150px) {
-  .menu {
+  .menu_header {
     ul {
       gap: 80px;
     }
@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 1050px) {
-  .menu {
+  .menu_header {
     ul {
       gap: 60px;
     }
@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 950px) {
-  .menu {
+  .menu_header {
     ul {
       gap: 30px;
     }
@@ -70,7 +70,7 @@
     top: 52px;
     z-index: 1000;
   }
-  .menu {
+  .menu_header {
     ul {
       display: flex;
       width: 40%;
@@ -92,7 +92,7 @@
       }
     }
   }
-  .menu {
+  .menu_header {
     ul.menu__btn-drop-down_open {
       right: 0;
       transition: all 0.3s ease;
@@ -105,7 +105,7 @@
     right: 10px;
     top: 31px;
   }
-  .menu {
+  .menu_header {
     ul {
       width: 100%;
     }
