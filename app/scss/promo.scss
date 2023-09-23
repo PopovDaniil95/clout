@@ -9,6 +9,10 @@
 .promo__background {
   position: absolute;
   top: 0;
+
+  img {
+    will-change: transition;
+  }
 }
 
 .shape-mid {
@@ -58,6 +62,82 @@
   font-weight: 300;
   line-height: 26.444px;
   letter-spacing: 1px;
+}
+
+@keyframes animate-shape-mid {
+  0% {
+    transform: translate(0, 0) scaleX(0.9) scaleY(1) rotate(0deg);
+  }
+  20% {
+    transform: translate(5px, -5px) scaleX(0.8) scaleY(0.9) rotate(3deg);
+  }
+  40% {
+    transform: translate(0px, 0px) scaleX(0.95) scaleY(0.9) rotate(0deg);
+  }
+  60% {
+    transform: translate(-5px, 5px) scaleX(0.92) scaleY(0.95) rotate(-4deg);
+  }
+  80% {
+    transform: translate(0px, 0px) scaleX(0.95) scaleY(0.9) rotate(-3deg);
+  }
+  100% {
+    transform: translate(0, 0) scaleX(1) scaleY(1) rotate(0deg);
+  }
+}
+
+@keyframes animate-shape-small {
+  0% {
+    transform: translate(0, 0) scaleX(0.9) scaleY(1) rotate(0deg);
+  }
+  20% {
+    transform: translate(5px, -5px) scaleX(0.9) scaleY(0.8) rotate(3deg);
+  }
+  40% {
+    transform: translate(0px, 0px) scaleX(0.95) scaleY(0.9) rotate(0deg);
+  }
+  60% {
+    transform: translate(-5px, 5px) scaleX(0.98) scaleY(0.85) rotate(-4deg);
+  }
+  80% {
+    transform: translate(0px, 0px) scaleX(0.95) scaleY(0.9) rotate(-3deg);
+  }
+  100% {
+    transform: translate(0, 0) scaleX(1) scaleY(1) rotate(0deg);
+  }
+}
+
+@keyframes animate-shape-big {
+  0% {
+    transform: translate(0, 0) scaleX(0.9) scaleY(1) rotate(0deg);
+  }
+  20% {
+    transform: translate(5px, -5px) scaleX(0.9) scaleY(0.8) rotate(3deg);
+  }
+  40% {
+    transform: translate(0px, 0px) scaleX(0.95) scaleY(0.9) rotate(0deg);
+  }
+  60% {
+    transform: translate(-5px, 5px) scaleX(0.92) scaleY(0.95) rotate(-4deg);
+  }
+  80% {
+    transform: translate(0px, 0px) scaleX(0.95) scaleY(0.9) rotate(-3deg);
+  }
+  100% {
+    transform: translate(0, 0) scaleX(1) scaleY(1) rotate(0deg);
+  }
+}
+
+/* Применение анимаций к изображениям */
+.shape-mid {
+  animation: animate-shape-mid 8s infinite alternate ease-in-out;
+}
+
+.shape-small {
+  animation: animate-shape-small 7s infinite alternate ease-in-out;
+}
+
+.shape-big {
+  animation: animate-shape-big 15s infinite alternate ease-in-out;
 }
 
 @media (max-height: 1280px) {
