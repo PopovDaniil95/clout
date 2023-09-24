@@ -1,0 +1,197 @@
+.background {
+  position: relative;
+}
+
+.background__glow-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  height: 450px;
+  border-radius: 450px;
+  background: #cd151d;
+  mix-blend-mode: soft-light;
+  filter: blur(200px);
+}
+
+.background__glow-top-right {
+  position: absolute;
+  top: 250px;
+  right: 600px;
+  width: 250px;
+  height: 300px;
+  border-radius: 250px;
+  background: #cd151d;
+  filter: blur(200px);
+}
+
+.background__glow-top-mid {
+  position: absolute;
+  top: 1000px;
+  right: 1000px;
+  width: 300px;
+  height: 300px;
+  background: #cd151d;
+  filter: blur(200px);
+}
+
+.background__glow-bottom-mid {
+  position: absolute;
+  bottom: 1000px;
+  right: 1000px;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.57);
+  filter: blur(200px);
+}
+
+@media (max-height: 1300px) {
+  .background__glow-top-mid {
+    top: 900px;
+  }
+}
+
+@media (max-height: 1200px) {
+  .background__glow-top-mid {
+    top: 800px;
+  }
+}
+@media (max-height: 1100px) {
+  .background__glow-top-mid {
+    top: 700px;
+  }
+}
+@media (max-height: 1000px) {
+  .background__glow-top-mid {
+    top: 600px;
+  }
+}
+@media (max-height: 750px) {
+  .background__glow-top-mid {
+    top: 500px;
+  }
+}
+
+@media (max-height: 900px) {
+  .background__glow-top-mid {
+    top: 500px;
+  }
+}
+
+@media (max-width: 2100px) {
+  .background__glow-top-right {
+    right: 500px;
+  }
+  .background__glow-top-mid {
+    right: 900px;
+  }
+}
+
+@media (max-width: 2000px) {
+  .background__glow-top-right {
+    right: 400px;
+  }
+}
+
+@media (max-width: 1900px) {
+  .background__glow-top-right {
+    right: 300px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .background__glow-top-right {
+    right: 200px;
+  }
+  .background__glow-top-mid {
+    right: 700px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .background__glow-top-right {
+    right: 100px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .background__glow-top-mid {
+    right: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .background__glow-top-mid {
+    right: 400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .background__glow-top-left {
+    left: -200px;
+  }
+  .background__glow-top-right {
+    transform: scale(0.9);
+  }
+  .background__glow-top-mid {
+    transform: scale(0.9);
+    right: 300px;
+  }
+}
+
+@media (max-width: 900px) {
+  .background__glow-top-left {
+    top: -100px;
+    left: -300px;
+  }
+  .background__glow-top-right {
+    right: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .background__glow-top-mid {
+    transform: scale(0.8);
+    right: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .background__glow-top-left {
+    top: -200px;
+    left: -500px;
+  }
+  .background__glow-top-right {
+    right: -100px;
+  }
+}
+
+@media (max-width: 650px) {
+  .background__glow-top-mid {
+    transform: scale(0.7);
+    right: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .background__glow-top-left {
+    top: -400px;
+    left: -800px;
+  }
+  @media (max-width: 450px) {
+    .background__glow-top-mid {
+      transform: scale(0.6);
+      right: 100px;
+    }
+  }
+  .background__glow-top-right {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .background__glow-top-left {
+    top: -1000px;
+    left: -1000px;
+  }
+}

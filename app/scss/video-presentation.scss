@@ -1,8 +1,92 @@
 .video-presentation {
   position: relative;
   padding-bottom: 52px;
-  transform: scaleX(0.2) scaleY(0.29) translate(215%, -460%);
+  transform: scaleX(0.2) scaleY(0.29) translate(215%, -480%);
   z-index: 9;
+}
+
+@media (max-width: 1530px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(200%, -486%);
+  }
+}
+
+@media (max-width: 1430px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(190%, -486%);
+  }
+}
+
+@media (max-width: 1100px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(175%, -510%);
+  }
+}
+
+@media (max-width: 1010px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(175%, -550%);
+  }
+}
+
+@media (max-width: 850px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(175%, -600%);
+  }
+}
+
+@media (max-width: 700px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(175%, -650%);
+  }
+}
+
+@media (max-width: 620px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(175%, -700%);
+  }
+}
+
+@media (max-width: 550px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(150%, -720%);
+  }
+}
+
+@media (max-width: 510px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(160%, -750%);
+  }
+}
+
+@media (max-width: 470px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(135%, -800%);
+  }
+}
+
+@media (max-width: 450px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(160%, -800%);
+  }
+}
+
+@media (max-width: 430px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(160%, -850%);
+  }
+}
+
+@media (max-width: 430px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(130%, -850%);
+  }
+}
+
+@media (max-width: 390px) {
+  .video-presentation {
+    transform: scaleX(0.2) scaleY(0.29) translate(140%, -870%);
+  }
 }
 
 .video-presentation__wrapper {

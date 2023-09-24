@@ -52,9 +52,41 @@
       color: rgba(255, 255, 255, 0.69);
       transition: all 0.3s;
       padding-bottom: 21px;
-      &:hover {
-      }
     }
+  }
+}
+
+@media (max-width: 870px) {
+  .menu_projects {
+    ul {
+      gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 730px) {
+  .menu_projects {
+    ul {
+      overflow-x: auto;
+      width: 100%;
+      justify-content: flex-start;
+      border-radius: 0;
+    }
+  }
+  .menu_projects::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .country__menu {
+    overflow-x: auto;
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 0;
+  }
+  .country__menu::-webkit-scrollbar {
+    display: none;
   }
 }
 
@@ -122,7 +154,7 @@
 
 .project__property {
   justify-content: space-between;
-  padding-bottom: 11px;
+  padding-bottom: 15px;
 }
 
 .project__property-name {

@@ -1,0 +1,77 @@
+.background__glow-bottom {
+  position: absolute;
+  top: 0;
+  left: 1300px;
+  width: 250px;
+  height: 650px;
+  background: rgba(255, 255, 255, 0.57);
+  opacity: 0.2;
+  filter: blur(100px);
+  transform: rotate(22deg);
+}
+
+@media (max-width: 2300px) {
+  .background__glow-bottom {
+    left: 1200px;
+  }
+}
+
+@media (max-width: 2100px) {
+  .background__glow-bottom {
+    left: 1100px;
+  }
+}
+
+@media (max-width: 1900px) {
+  .background__glow-bottom {
+    left: 1000px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .background__glow-bottom {
+    left: 900px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .background__glow-bottom {
+    left: 800px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .background__glow-bottom {
+    left: 700px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .background__glow-bottom {
+    left: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .background__glow-bottom {
+    left: 400px;
+  }
+}
+
+@media (max-width: 775px) {
+  .background__glow-bottom {
+    left: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .background__glow-bottom {
+    left: 150px;
+  }
+}
+
+@media (max-width: 500px) {
+  .background__glow-bottom {
+    display: none;
+  }
+}
