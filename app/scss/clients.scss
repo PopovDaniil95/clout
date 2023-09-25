@@ -6,6 +6,18 @@
   padding-bottom: 63px;
 }
 
+@media (max-width: 750px) {
+  .clients {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 470px) {
+  .clients {
+    padding-bottom: 45px;
+  }
+}
+
 .clients__title {
   font-size: 22px;
   font-weight: 500;

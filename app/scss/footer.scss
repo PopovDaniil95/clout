@@ -6,10 +6,25 @@
 }
 
 .footer__title {
-  font-size: 63.828px;
+  font-size: 64px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 23px;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .footer__title {
+    font-size: 45px;
+  }
+}
+@media (max-width: 470px) {
+  .footer__title {
+    font-size: 40px;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
 }
 
 .footer__text {
