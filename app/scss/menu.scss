@@ -27,6 +27,48 @@
 }
 
 .menu__btn-drop-down {
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 21px;
+    height: 29px;
+    transition: all 0.3s;
+
+    span {
+      display: flex;
+      height: 2px;
+      width: 100%;
+      background: #fff;
+      transition: all 0.3s;
+    }
+  }
+}
+
+.menu__btn-drop-down.menu__btn-drop-down_close {
+  div {
+    transform: translate(0px, 5px);
+    transition: all 0.3s;
+
+    span {
+      width: 103%;
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(1px, 0px);
+        transition: all 0.3s;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        transition: all 0.3s;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(11px, -10px);
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+
+.menu__btn-drop-down {
   display: none;
   background: inherit;
   cursor: pointer;
@@ -35,7 +77,8 @@
 .menu__btn-drop-down-close {
   display: none;
   position: relative;
-  top: 5px;
+  top: 6px;
+  right: 6px;
 }
 
 @media (max-width: 1150px) {
@@ -102,8 +145,8 @@
 
 @media (max-width: 600px) {
   .menu__btn-drop-down {
-    right: 10px;
-    top: 31px;
+    right: 16px;
+    top: 37px;
   }
   .menu_header {
     ul {

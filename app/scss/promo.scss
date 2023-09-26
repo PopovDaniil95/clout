@@ -56,6 +56,44 @@
   margin-bottom: 28px;
 }
 
+.promo__title {
+  position: relative;
+  animation: slide 1s linear infinite;
+}
+
+.promo__title.off-screen {
+  top: 0px; /* Значение должно быть больше, чем высота текста */
+  opacity: 0;
+}
+
+/* Анимация появления и исчезновения текста */
+@keyframes slide {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  20% {
+    top: -80px;
+    opacity: 0.2;
+  }
+  40% {
+    top: -60px;
+    opacity: 0.4;
+  }
+  60% {
+    top: -40px;
+    opacity: 0.6;
+  }
+  80% {
+    top: -20px;
+    opacity: 0.8;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
 .promo__description {
   text-align: center;
   font-size: 25px;
@@ -193,7 +231,7 @@
 
 @media (max-width: 930px) {
   .promo__background {
-    transform: scale(0.5) translate(-200px, -700px);
+    transform: scale(0.5) translate(-200px, -600px);
   }
   .promo__title {
     font-size: 96px;
@@ -214,36 +252,18 @@
 }
 
 @media (max-width: 600px) {
-  .promo__background {
-    transform: scale(0.45) translate(-200px, -850px);
-  }
   .promo__title {
     font-size: 60px;
   }
 }
 
-@media (max-width: 530px) {
-  .promo__background {
-    transform: scale(0.4) translate(-200px, -1000px);
-  }
-}
-
 @media (max-width: 470px) {
-  .promo__background {
-    transform: scale(0.35) translate(-200px, -1100px);
-  }
   .promo__title {
     font-size: 48px;
     line-height: 60px;
   }
   .promo__description {
     max-width: 311px;
-  }
-}
-
-@media (max-width: 410px) {
-  .promo__background {
-    transform: scale(0.3) translate(-200px, -1350px);
   }
 }
 
