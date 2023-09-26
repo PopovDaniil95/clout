@@ -17,26 +17,19 @@ menuBtn.addEventListener("click", () => {
 });
 
 const words = [
-  "КРЕАТИВ",
   "ВИДЕО КОНТЕНТ",
   "МОУШН ГРАФИКА",
   "РЕКЛАМА",
   "КЛИПЫ",
   "ЭТО КЛАУТ",
+  "КРЕАТИВ",
 ];
 let currentWordIndex = 0;
 
-// Функция для изменения слов в заголовке
 function changeWord() {
   const title = document.getElementById("changingText");
   title.textContent = words[currentWordIndex];
   currentWordIndex = (currentWordIndex + 1) % words.length;
-
-  // Добавляем и убираем классы для анимации
-  title.classList.remove("off-screen");
-  void title.offsetWidth; // Принудительный перерасчет стилей
-  title.classList.add("off-screen");
 }
 
-// Установите интервал для смены слов
-setInterval(changeWord, 1000);
+setInterval(changeWord, 2500);

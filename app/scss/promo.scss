@@ -1,8 +1,8 @@
 .promo {
   position: relative;
   height: calc(100vh - 92px);
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -42,6 +42,7 @@
 .promo__content {
   position: relative;
   height: 100%;
+  width: 100%;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -52,54 +53,36 @@
   text-align: center;
   font-size: 151.084px;
   font-weight: 700;
-  line-height: 138.968px;
+  line-height: 160px;
   margin-bottom: 28px;
 }
 
 .promo__title {
   position: relative;
-  animation: slide 1s linear infinite;
+  animation: slide 2.5s ease-in infinite;
 }
 
-.promo__title.off-screen {
-  top: 0px; /* Значение должно быть больше, чем высота текста */
-  opacity: 0;
+.promo__description {
+  position: absolute;
+  text-align: center;
+  top: 63vh;
+  left: calc(50% - 303px);
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 26.444px;
+  letter-spacing: 1px;
 }
 
-/* Анимация появления и исчезновения текста */
 @keyframes slide {
   0% {
     top: -100px;
     opacity: 0;
   }
-  20% {
-    top: -80px;
-    opacity: 0.2;
-  }
-  40% {
-    top: -60px;
-    opacity: 0.4;
-  }
-  60% {
-    top: -40px;
-    opacity: 0.6;
-  }
-  80% {
-    top: -20px;
-    opacity: 0.8;
-  }
+
   100% {
     top: 0px;
     opacity: 1;
   }
-}
-
-.promo__description {
-  text-align: center;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 26.444px;
-  letter-spacing: 1px;
 }
 
 @keyframes animate-shape-mid {
@@ -219,6 +202,7 @@
     font-size: 120px;
   }
   .promo__description {
+    left: calc(50% - 246.8px);
     font-size: 20px;
   }
 }
@@ -239,12 +223,14 @@
   }
   .promo__description {
     font-size: 16px;
+    left: calc(50% - 201.8px);
   }
 }
 
 @media (max-width: 750px) {
   .promo__title {
     font-size: 76px;
+    line-height: 100px;
   }
   .promo__description {
     font-size: 16px;
@@ -254,16 +240,17 @@
 @media (max-width: 600px) {
   .promo__title {
     font-size: 60px;
+    line-height: 75px;
   }
 }
 
 @media (max-width: 470px) {
   .promo__title {
     font-size: 48px;
-    line-height: 60px;
   }
   .promo__description {
     max-width: 311px;
+    left: calc(50% - 155.5px);
   }
 }
 
