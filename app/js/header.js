@@ -15,7 +15,6 @@ menuBtn.addEventListener("click", () => {
     body.style.overflowY = "auto";
   }
 });
-
 const words = [
   "ВИДЕО КОНТЕНТ",
   "МОУШН ГРАФИКА",
@@ -28,8 +27,19 @@ let currentWordIndex = 0;
 
 function changeWord() {
   const title = document.getElementById("changingText");
-  title.textContent = words[currentWordIndex];
-  currentWordIndex = (currentWordIndex + 1) % words.length;
+
+  title.classList.remove("animate-slide");
+
+  setTimeout(() => {
+    title.textContent = words[currentWordIndex];
+    currentWordIndex = (currentWordIndex + 1) % words.length;
+
+    title.classList.add("animate-slide");
+  }, 2000);
 }
 
-setInterval(changeWord, 2500);
+document
+  .getElementById("changingText")
+  .addEventListener("animationiteration", changeWord);
+
+changeWord();
