@@ -26,9 +26,6 @@ function videoCoordinates() {
     }
 
     videoPresentation.style.top = -offsetTop + "px";
-    console.log(videoPresentationTop);
-    console.log(promoTitleTop);
-    console.log(offsetTop);
   }
 }
 videoCoordinates();
@@ -41,31 +38,3 @@ function refreshPage() {
 }
 window.addEventListener("resize", refreshPage);
 
-gsap.registerPlugin(ScrollTrigger);
-
-// Настройка анимации
-gsap.to(".video-presentation", {
-  scale: 1,
-  x: "0%",
-  y: "0%",
-  top: 0,
-  right: 0,
-  duration: 2,
-  scrollTrigger: {
-    trigger: ".promo",
-    start: "top top", // Изменено с "bottom top" на "top top"
-    end: "bottom top",
-    scrub: true,
-  },
-});
-
-gsap.to(".video-presentation .video-presentation__cover", {
-  borderRadius: "0px",
-  duration: 2,
-  scrollTrigger: {
-    trigger: ".promo",
-    start: "top top", // Изменено с "bottom top" на "top top"
-    end: "bottom top",
-    scrub: true,
-  },
-});

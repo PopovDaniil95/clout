@@ -11,3 +11,14 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+
+  <div class="preloader">
+    <div class="preloader__status">
+        <div status class="preloader__status-text">I'm {{loaded}} % done!</div>
+        <div class="preloader__status-loader">
+          <div loader :style="loadStyle" class="preloader__status-bar"></div>
+        </div>
+    </div>
+  </div>
+
+ 
