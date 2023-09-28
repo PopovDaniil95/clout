@@ -139,6 +139,16 @@
   }
 }
 
+@media (max-width: 1100px) and (max-height: 420px) {
+  .background__glow-top-mid {
+    display: none;
+  }
+  .background__glow-top-right {
+    transform: scale(0.8);
+    top: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .background__glow-top-left {
     top: -100px;
