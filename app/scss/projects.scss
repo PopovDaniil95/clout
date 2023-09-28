@@ -55,6 +55,9 @@
 .menu_projects {
   padding-bottom: 21px;
   border-bottom: 1px solid rgba(217, 217, 217, 0.33);
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
 }
 
 .menu_projects {
