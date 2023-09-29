@@ -1,3 +1,5 @@
+var scriptExecuted = false; // Флаг для отслеживания выполнения скрипта
+
 function getDistanceBetweenHeaderAndPromoTitle() {
   var header = document.querySelector(".header");
   var promoTitle = document.querySelector(".promo__title");
@@ -31,7 +33,11 @@ function videoCoordinates() {
     var videoPresentationTop = rectVideo.top;
     let resultDistance = getDistanceBetweenHeaderAndPromoTitle();
 
-    var offsetTop = videoPresentationTop - promoTitleTop + resultDistance;
+    var offsetTop = videoPresentationTop - promoTitleTop + resultDistance - 30;
+
+    if (window.innerHeight < 430) {
+      offsetTop += 15;
+    }
 
     videoPresentation.style.top = -offsetTop + "px";
 
@@ -41,12 +47,8 @@ function videoCoordinates() {
     console.log(offsetTop);
   }
 }
-videoCoordinates();
 
-function refreshPage() {
-  var promoTitle = document.querySelector(".promo__title");
-  if (promoTitle) {
-    location.reload();
-  }
-}
-window.addEventListener("resize", refreshPage);
+// Используйте событие "load" для выполнения скрипта при загрузке страницы
+window.addEventListener("load", videoCoordinates);
+
+// Используйте событие "resize" для выполнения скрипта при изменении размера окна

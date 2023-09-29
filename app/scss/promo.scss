@@ -159,6 +159,12 @@
   animation: animate-shape-big 15s infinite alternate ease-in-out;
 }
 
+@media (max-height: 1320px) {
+  .promo__title {
+    font-size: 130px;
+  }
+}
+
 @media (max-height: 1280px) {
   .promo__background {
     transform: scale(0.9) translate(0px, -100px);
@@ -197,7 +203,7 @@
 
 @media (max-width: 1170px) {
   .promo__title {
-    font-size: 120px;
+    font-size: 103px;
   }
   .promo__description {
     font-size: 20px;
@@ -215,7 +221,7 @@
     transform: scale(0.5) translate(-200px, -600px);
   }
   .promo__title {
-    font-size: 96px;
+    font-size: 83px;
     margin-bottom: 0px;
   }
   .promo__description {
@@ -230,7 +236,7 @@
 }
 @media (max-width: 750px), (max-height: 420px) {
   .promo__title {
-    font-size: 70px;
+    font-size: 65px;
     line-height: 100px;
   }
   .promo__description {
@@ -240,7 +246,7 @@
 
 @media (max-width: 600px) {
   .promo__title {
-    font-size: 60px;
+    font-size: 50px;
     line-height: 75px;
   }
 }
@@ -256,6 +262,6 @@
 
 @media (max-width: 410px) {
   .promo__title {
-    font-size: 40px;
+    font-size: 37px;
   }
 }

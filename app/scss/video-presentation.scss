@@ -1,6 +1,7 @@
 .video-presentation {
   position: relative;
   padding-bottom: 52px;
+
   /*transform: scaleX(0.2) scaleY(0.29) translate(215%, -480%);*/
   transform: scaleX(0.2) scaleY(0.25) translate(0%, 0%);
   z-index: 0;
@@ -18,14 +19,15 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .video-presentation {
     right: -250px;
+    transform: translate(0%, 0%) scale(0.3, 0.35);
   }
 }
 @media (max-width: 750px) {
   .video-presentation {
-    right: -190px;
+    right: -220px;
   }
 }
 @media (max-width: 600px) {
@@ -35,13 +37,13 @@
 }
 @media (max-width: 470px) {
   .video-presentation {
-    right: -125px;
+    right: -104px;
+
+    transform: translate(0%, 0%) scale(0.4, 0.45);
   }
 }
 @media (max-width: 410px) {
   .video-presentation {
-    right: -104px;
-    transform: translate(0%, 0%) scale(0.3, 0.35);
   }
 }
 /*@media (max-width: 1530px) {
