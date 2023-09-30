@@ -33,10 +33,19 @@ function videoCoordinates() {
     var videoPresentationTop = rectVideo.top;
     let resultDistance = getDistanceBetweenHeaderAndPromoTitle();
 
-    var offsetTop = videoPresentationTop - promoTitleTop + resultDistance - 30;
+    var offsetTop =
+      videoPresentationTop -
+      promoTitleTop +
+      resultDistance +
+      30 -
+      resultDistance +
+      promoTitleHeight;
 
     if (window.innerHeight < 430) {
-      offsetTop += 15;
+      offsetTop -= resultDistance - 30;
+    }
+    if (window.innerHeight < 370) {
+      offsetTop -= 25;
     }
 
     videoPresentation.style.top = -offsetTop + "px";
