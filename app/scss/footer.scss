@@ -70,6 +70,15 @@
 
 .footer__privacy.flex {
   flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.footer__privacy:hover {
+  p {
+    color: #fff;
+    transition: all 0.3s;
+  }
 }
 
 .footer__privacy-title {
@@ -77,11 +86,13 @@
   font-size: 15px;
   font-weight: 500;
   line-height: 161.023%;
+  transition: all 0.3s;
 }
 
 .footer__privacy-text {
   color: rgba(255, 255, 255, 0.54);
   font-size: 15px;
   font-weight: 500;
+  transition: all 0.3s;
   line-height: 161.023%;
 }
