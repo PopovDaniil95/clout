@@ -8,6 +8,7 @@
   opacity: 0.2;
   filter: blur(100px);
   transform: rotate(22deg);
+  z-index: -1;
 }
 
 .background__shape-opacity {
@@ -30,6 +31,7 @@
   height: auto;
   right: 400px;
   bottom: -600px;
+  z-index: -1;
 }
 
 .background__shape-right-img {

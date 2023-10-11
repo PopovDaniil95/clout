@@ -141,7 +141,12 @@
   display: block;
 }
 
-.video-presentation__wrapper svg {
+.video-presentation__icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
   transition: all 0.3s;
 }
 
